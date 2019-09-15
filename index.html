@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span>Todo App</span>
+        </div>
+      </div>
+    </header>
+    <!-- end header-->
+
+    <!-- start Container -->
+    <div class="container">
+      <!-- Add Button -->
+      <div class="add-button">
+        <ul class="add-menu">
+          <li>Add Todo</li>
+          <li>Add Note</li>
+        </ul>
+        <button><i class="fa fa-plus"></i></button>
+      </div>
+      <!-- End Add Button -->
+
+      <!-- start todo-box-->
+      <div class="todo-box">
+        <!--start todo-title -->
+        <div class="todo-title">
+          <h3>Todo title</h3>
+          <span class="plus"><i class="fa fa-plus"></i></span>
+        </div>
+        <!-- end todo-title -->
+        <!-- start todo-items-->
+        <ul class="todo-items active">
+          <li class="todo-item">one todo</li>
+          <li class="todo-item">two todo</li>
+          <li class="todo-item">three todo</li>
+          <li class="todo-item">four todo</li>
+          <li class="todo-item">five todo</li>
+        </ul>
+        <!-- end todo-items-->
+        <!-- start todo-items-->
+        <ul class="todo-items disactive">
+          <li class="todo-item">one todo</li>
+          <li class="todo-item">two todo</li>
+        </ul>
+        <!-- end todo-items-->
+      </div>
+      <!-- end todo-box-->
+    </div>
+    <!-- end Container-->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

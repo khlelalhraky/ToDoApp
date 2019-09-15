@@ -1,0 +1,167 @@
+/************************** Main Classs ***************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 40px;
+}
+
+/************************** End Main Classs ***************************/
+
+/************************** Start header ***************************/
+
+.header {
+  width: 100%;
+  padding: 15px 0;
+  background: #2b75fd;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  color: #fff;
+}
+
+/************************** End Header ***************************/
+
+/************************** Start Add Button *************************/
+
+.add-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.add-button button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: #2b75fd;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  float: right;
+}
+
+.add-button .add-menu {
+  width: 200px;
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #eee;
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.add-button .add-menu::before {
+  content: "\f0d7";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  bottom: 10px;
+  right: 35px;
+  color: #ddd;
+}
+
+.add-button .add-menu li {
+  padding: 10px 20px;
+  color: #6f6f6f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-button .add-menu li:hover {
+  background: #eee;
+}
+
+/************************** End Add Button ************************/
+
+/************************** start Todo ***************************/
+
+.todo-box {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 0 5px #eee;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.todo-box .todo-title {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.todo-box .todo-title::after {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 2px;
+  background: #eee;
+  margin-top: 10px;
+}
+
+.todo-box .todo-title h3 {
+  padding: 0;
+  margin: 0;
+  color: #6f6f6f;
+  font-weight: normal;
+}
+
+.todo-box .todo-title .plus {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.todo-box .todo-title .plus:hover {
+  color: #6f6f6f;
+}
+
+.todo-box .todo-items {
+}
+
+.todo-box .todo-items.active::after {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 2px;
+  background: #eee;
+  margin: 10px 0;
+}
+
+.todo-box .todo-items .todo-item {
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #6f6f6f;
+  cursor: pointer;
+}
+
+.todo-box .todo-items.disactive .todo-item {
+  text-decoration: line-through;
+}
+/************************** End Todo ***************************/
